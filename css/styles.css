@@ -4,7 +4,7 @@ li,
 a,
 p {
   text-decoration: none;
-  text-transform: capitalize;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -21,7 +21,18 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 325px;
-  margin-right: 212px;
+}
+.button-text {
+  font-family: "HeadlandOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-align: justify;
+
+  color: #26c6ea;.
 }
 .header-right {
   height: 41.69355010986328px;
@@ -32,18 +43,30 @@ p {
   text-align: center;
 }
 .header-foto {
-  background-image: url("../img/Rectangle 104avatar23.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url("../img/Rectangle 104avatar23.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 39px 49px 39px 284px;
+  padding: 39px 49px 39px 204px;
   max-height: 150px;
   align-items: center;
-  background-image: rgba(43, 74, 97, 0.87);
+  display: flex;
+
   border-bottom: 3px solid #ffffff;
+}
+.div-header-leng {
+  display: flex;
 }
 .header-left {
   display: flex;
+  width: 1032px;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo header {
   padding-right: 168px;
@@ -75,15 +98,25 @@ p {
   color: #ffffff;
 }
 
-.header-li {
+.header-link {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+.header-link:hover,
+.header-link:focus {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 24px;
   text-align: justify;
 
-  color: #ffffff;
+  color: #94cfff;
 }
 
 .main-section2 {
@@ -139,8 +172,7 @@ p {
   background: #0b0e66;
   border: 2px solid #26c7ea;
   border-radius: 35px 0px;
-  margin-right: 49px;
-  margin-top: 22px;
+
 }
 
 .cnopka2 {
@@ -210,7 +242,11 @@ p {
   height: 120px;
 }
 .footer {
-  background-image: url("../img/Rectangle 12footer.png");
+  background-image: linear-gradient(
+    to right,
+    rgba(43, 74, 97, 0.87),
+    rgba(43, 74, 97, 0.87)
+  ), url("../img/Rectangle 12footer.png");
   height: 223px;
   width: 1440px;
   border-radius: 0px;
